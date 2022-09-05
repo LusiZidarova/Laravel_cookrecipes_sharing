@@ -29,3 +29,4 @@ Route::get('/', [RecipeController::class, 'index']);
  Route::post('store', 'RecipeController@store');
  
  Route::resource('recipes', 'RecipeController@create');  
+ Route::post('addrecipe', [RecipeController::class, 'store']); 
